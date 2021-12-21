@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int which, boolean isChecked) {
                 press[which]++;
-                if(press[which] >0) press[which] =0;
+                if(press[which] >1) press[which] =0;
                 if (isChecked) color[which] = 255;
                 else if (color[which] == 255) color[which] = 0;
             }
