@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 /**
  * @author		Noa Shetrit noashetrit@gmail.com
- * @version	1.1
+ * @version	1.3
  * @since		21/12/2021
  * This application work with Alert Dialog
  * and show us many options we can do like
@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     AlertDialog.Builder adb1, adb2, adb3;
     AlertDialog ad1, ad2, ad3;
-    //final int[] color = {Color.RED,Color.GREEN,Color.BLUE};
     final String[] colors = {"Red","Green","Blue"};
     LinearLayout llayout;
     String str;
