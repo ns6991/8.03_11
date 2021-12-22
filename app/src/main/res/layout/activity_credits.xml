@@ -30,7 +30,7 @@
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="50"
+                android:layout_weight="70"
                 android:backgroundTint="#764CBF"
                 android:gravity="center"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -44,7 +44,7 @@
                 android:id="@+id/back"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="20"
+                android:layout_weight="10"
                 android:backgroundTint="#DC5AF3"
                 android:onClick="back"
                 android:text="return "

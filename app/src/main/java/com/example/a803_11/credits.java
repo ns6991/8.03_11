@@ -19,12 +19,13 @@ public class credits extends AppCompatActivity {
         tv.setText("Author : Noa Shetrit\n\n" +
                 "Description: hiii :)\n" +
                 "the application gives you 4 options:\n" +
-                "1 - change background color by basic color (blue, yellow, red)\n" +
-                "2 - change background color by mixing the basic color (blue, yellow, red)\n" +
+                "1 - change background color by basic color (blue, green, red)\n" +
+                "2 - change background color by mixing the basic color (blue, green, red)\n" +
                 "3 - set background color to white\n" +
                 "4 - enter a text and turn it to a toast message\n" +
                 "this program work with alert dialog and helped me practise the subject.\n" +
                 "Have a gooood day ;))) " );
+        tv.setTextSize(20);
 
     }
 

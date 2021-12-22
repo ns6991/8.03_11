@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 /**
  * @author		Noa Shetrit noashetrit@gmail.com
- * @version	1.3
+ * @version	1.4
  * @since		21/12/2021
  * This application work with Alert Dialog
  * and show us many options we can do like
@@ -29,7 +29,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     AlertDialog.Builder adb1, adb2, adb3;
-    AlertDialog ad1, ad2, ad3;
     final String[] colors = {"Red","Green","Blue"};
     LinearLayout llayout;
     String str;
@@ -60,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ad1 = adb1.create();
-        ad1.show();
+        adb1.create().show();
     }
 
     public void setBGmultiColor(View view) {
@@ -100,9 +98,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        adb2.setNegativeButton("cancel",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
 
-        ad2 = adb2.create();
-        ad2.show();
+        adb2.create().show();
     }
 
     public void setBGwhite(View view) {
@@ -129,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (!et.equals("")) str = et.getText().toString();
-                else str = "*system message* -\n you didn't write nothing..";
+                else str = "*system message* - you didn't write nothing..";
                 Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
 
             }
@@ -142,8 +145,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ad3 = adb3.create();
-        ad3.show();
+        adb3.create().show();
     }
 
     @Override
